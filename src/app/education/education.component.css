@@ -1,0 +1,120 @@
+.main-timeline-section{
+  position: relative;
+  width: 100%;
+  margin:auto;
+  height:300px;
+  }
+  .main-timeline-section .timeline-start,
+  .main-timeline-section .timeline-end{
+  position: absolute;
+  background:#000000;
+  border-radius:100px;
+  top:50%;
+  transform: translateY(-50%);
+  width:40px;
+  height:40px;
+  }
+  .main-timeline-section .timeline-end{
+  right:0px;
+  }
+  .main-timeline-section .conference-center-line{
+  position: absolute;
+  width:100%;
+  height:7px;
+  top:50%;
+  transform: translateY(-50%);
+  background:#000000;
+  }
+  .timeline-article{
+  width: 20%;
+  position: relative;
+  min-height: 300px;
+  float:right;
+  }
+  .timeline-article .content-date{
+  position: absolute;
+  top: 30%;
+  left: -30px;
+  font-size:20px;
+  }
+  .timeline-article .meta-date{
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width:20px;
+  height:20px;
+  border-radius: 100%;
+  background:#f8b757;
+  border:1px solid #000000;
+  }
+  .timeline-article .content-box{
+  box-shadow: 3px 3px 3px 3px #ffe045;
+  border:1px solid #000000;
+  border-radius: 5px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCQATJkjri98BtAYtLU0lgFBqieUkHhn2Ow&usqp=CAU);
+  width: 190px;
+  position: absolute;
+  top: 60%;
+  left: -80px;
+  padding:11px;
+  font-size: 14px;
+  font-weight: 800;
+  }
+  .timeline-article-top .content-box:before{
+  content: " ";
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:-20px;
+  border:10px solid transparent;
+  border-bottom-color: #000000;
+  }
+  .timeline-article-bottom .content-date{
+  top: 59%;
+  }
+  .timeline-article-bottom .content-box{
+  top: 0%;
+  }
+  .timeline-article-bottom .content-box:before{
+  content: " ";
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom:-20px;
+  border:10px solid transparent;
+  border-top-color:#000000;
+  }
+
+  .content-box p{
+
+
+
+  }
+  h5 {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    overflow: hidden;
+    line-height: 1;
+    background: linear-gradient(190deg, rgb(246, 235, 17) 0%, rgb(243, 129, 17) 100%);
+    border-radius: 20px;
+    color: rgb(63, 14, 81);
+  }
+  h5 span {
+    display: block;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  }
+
+  @keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
+
+

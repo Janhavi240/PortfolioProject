@@ -1,0 +1,66 @@
+
+h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+  overflow: hidden;
+  line-height: 1;
+  background: linear-gradient(190deg, rgb(246, 235, 17) 0%, rgb(243, 129, 17) 100%);
+  border-radius: 20px;
+  color: rgb(63, 14, 81);;
+}
+h5 span {
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+ul {
+	list-style: none;
+}
+
+
+.about-me-box {
+	margin: 50px 0;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_SefUZv-QwGWycqBX_miulBrjHIQQcepzkA&usqp=CAU);
+	box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	display: block;
+	padding: 0 10px 0 0;
+}
+.check-this-out-box {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+
+@media (max-width: 767px) {
+	#about-me-box {
+		padding: 0 10px;
+	}
+	/*responsive helper classes*/
+	.hidden-xs {
+		display: none;
+	}
+	.max-width-xs {
+		width: 100%;
+}
+
+
+}
